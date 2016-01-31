@@ -75,7 +75,7 @@ module Sudoku
       end
 
       it 'does not extract the tenth grid' do
-        expect { build_grid_extractor.call(9) }.to raise_error(StandardError)
+        expect { build_grid_extractor.call(9) }.to raise_error(BoardError)
       end
     end
 
